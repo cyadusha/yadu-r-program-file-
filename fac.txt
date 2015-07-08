@@ -1,0 +1,89 @@
+
+R version 3.2.1 (2015-06-18) -- "World-Famous Astronaut"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin10.8.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.66 (6956) x86_64-apple-darwin10.8.0]
+
+[Workspace restored from /Users/chittampalliyashaswini/.RData]
+[History restored from /Users/chittampalliyashaswini/.Rapp.history]
+
+> y = 1
+> fac = function(x)
++ for(i in 1:x)
++ y = y*((1:x)[i])
+> print(y)
+[1] 1
+> fac(12)
+> 
+> rm(x,y)
+> y = 1
+> x = 1:12
+> fac = function(x)
++ for(i in 1:x)
++ y = y*((1:x)[i])
+> print(y)
+[1] 1
+> fac(12)
+> factorial(12)
+[1] 479001600
+> help(factorial)
+starting httpd help server ... done
+> rm(x,y)
+> y = 1
+> fac = function(x)
++ for(i in 1:x)
++ y = y*((1:x)[i])
+> fac(12)
+> print(y)
+[1] 1
+> fac(12)
+> rm(x,y)
+Warning message:
+In rm(x, y) : object 'x' not found
+> y = 1
+> for(i in 1:x){
++ y = y*((1:x[i]))
++ print(y)
++ }
+Error: object 'x' not found
+> 
+> 
+> rm(x,y)
+Warning message:
+In rm(x, y) : object 'x' not found
+> fac = function(x){
++ y = 1
++ for(i in 1:x){
++ y = y*((1:x)[i])
++ print(y)
++ }
++ }
+> fac(12)
+[1] 1
+[1] 2
+[1] 6
+[1] 24
+[1] 120
+[1] 720
+[1] 5040
+[1] 40320
+[1] 362880
+[1] 3628800
+[1] 39916800
+[1] 479001600
+> 
